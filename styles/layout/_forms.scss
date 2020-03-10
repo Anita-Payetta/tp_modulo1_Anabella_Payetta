@@ -1,0 +1,60 @@
+.contact-form {
+    color: #495057;
+    display: flex;
+    flex-direction: column;
+
+    & div input,
+    & input,
+    & textarea {
+        margin-bottom: 15px;
+        line-height: 24px;
+        padding: 6px 12px;
+        font-family: $paragraph_font;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    & div {
+        display: inline-flex;
+        margin: 0;
+
+        @media screen and (max-width: map-get($breakpoints, "xlarge")) {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        & input:first-child {
+            margin-right: 5px;
+
+            @media screen and (max-width: map-get($breakpoints, "xlarge")) {
+                margin-right: 0;
+            }
+        }
+
+        & input:last-child {
+            margin-left: 5px;
+
+            @media screen and (max-width: map-get($breakpoints, "xlarge")) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    & button {
+        background: $hover_color;
+        border: none;
+        border-radius: 20px;
+        padding: 8px 30px;
+        color: #FFFFFF;
+        transition: $page_common_transition;
+        margin: auto;
+        font-family: $paragraph_font;
+        font-size: 16px;
+
+        &:hover {
+            background-color: #0067D5;
+            cursor: pointer;
+        }
+    }
+}

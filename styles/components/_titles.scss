@@ -1,0 +1,54 @@
+h2,
+h3,
+h4,
+h5 {
+    font-family: $title_font;
+    margin-left: 40px;
+    margin: 0 0 20px 0;
+    padding: 0;
+
+}
+
+
+.page-motto {
+    color: #FFFFFF;
+    margin: 0 0 40px 0;
+    font-size: 48px;
+    font-weight: 700;
+    display: block;
+
+    @media screen and (max-width: map-get($breakpoints, "large")) {
+        font-size: 34px;
+    }
+
+    & > span {
+        text-decoration: underline;
+        color: #74B5FC;
+        display: block;    
+    }
+}
+
+p {
+    font-family: $paragraph_font;
+    margin: 0 0 30px 0;
+    font-weight: 400;
+    
+    &.icon-description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    }
+}
+
+.icon-title {
+    margin-bottom: 10px;
+
+    & a {
+        padding: 0;
+        font-weight: 700;
+        color: #283d50;
+        font-family: $title_font;
+        font-size: 18px;
+    }
+
+}

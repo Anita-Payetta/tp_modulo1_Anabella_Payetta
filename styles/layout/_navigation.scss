@@ -1,0 +1,140 @@
+ul {
+    list-style: none;
+}
+
+.main-nav {
+    @media screen and (max-width: map-get($breakpoints, "xlarge")) {
+        display: block;
+        background-color: rgba(19, 39, 57, 0.9);
+        z-index: 3050;
+        width: 260px;
+        overflow-y: auto;
+        position: absolute;
+        height: 100vh;
+        left: -260px;
+        top: 0;
+        transition: $page_common_transition;
+
+        & .main-nav-item a{
+            color: #FFFFFF;
+
+            &:hover {
+                color: $hover_color;
+            }
+        }
+    }
+}
+
+.main-nav-list {
+    display: flex;
+    margin: 0;
+    background-color: #FFFFFF;
+
+    & .main-nav-item:hover {
+        color: $hover_color;
+    }
+
+    & .main-nav-sub-list {
+        display: none;
+        
+        & .main-nav-sub-item {
+            padding: 10px 0;
+            box-sizing: border-box;
+        }
+    }
+    
+    @media screen and (max-width: map-get($breakpoints, "xlarge")) {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: transparent;
+        padding: 20px;
+
+        & .main-nav-item {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.main-nav-item.drop-down {
+    position: relative;
+
+    & > a::after {
+    content: "\f078";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-left: 10px;
+    }
+
+}
+
+.main-nav-item.drop-down:hover .main-nav-sub-list {
+    @include desplegableList;
+
+    @media screen and (max-width: map-get($breakpoints, "xlarge")) {
+        position: relative;
+        box-shadow: none;
+        padding-left: 20px;
+        transition: $page_common_transition;
+        background-color: transparent;
+    }
+
+    & .main-nav-sub-sub-list {
+        display: none;
+    }
+
+    & .main-nav-sub-item.drop-down {
+
+        & > a::after {
+            content: "\f054";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            padding-left: 20px;
+        }
+    
+        &:hover .main-nav-sub-sub-list {
+            @include desplegableList;
+            left: 100%;
+            top: 20%;
+
+            @media screen and (max-width: map-get($breakpoints, "xlarge")) {
+                position: relative;
+                left: 0;
+                top: 0;
+                box-shadow: none;
+                transition: $page_common_transition;
+                padding-left: 20px;
+                background-color: transparent;
+            }
+        }
+
+        & .main-nav-sub-sub-item {
+            padding: 10px 0;
+        }
+        
+    }
+}
+
+#open-side-nav:target {
+    overflow: hidden;
+
+    & .side-nav-overlay {
+        display: block;
+        z-index: 3000;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgba(19, 39, 57, 0.8);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    & .main-nav {
+        transform: translateX(260px);
+    }
+
+    & .fas.fa-bars {
+        display: none;
+    }
+}

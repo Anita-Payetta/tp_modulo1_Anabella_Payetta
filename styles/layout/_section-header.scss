@@ -1,0 +1,30 @@
+.section-header {
+    padding: 60px 0;
+    width: 50%;
+    margin: auto;
+
+    @media screen and (max-width: map-get($breakpoints, "xlarge")) {
+        width: 75%;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "large")) {
+        width: 100%;
+    }
+
+    & h3 {
+        color: #283d50;
+        font-family: $title_font;
+        font-weight: 500;
+        font-size: 36px;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+
+    & p {
+        color: #556877;
+        font-size: 15px;
+        text-align: center;
+        margin: 0;
+    }
+    
+}

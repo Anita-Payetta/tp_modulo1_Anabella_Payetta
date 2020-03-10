@@ -1,0 +1,92 @@
+.page-section {
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 12px 0px;
+
+    &#home {
+        @include sectionPropierties(#1445B3);
+
+        @media screen and (max-width: map-get($breakpoints, "medium")) {
+            padding: 0 15px 60px 15px;
+        }
+
+        & > .section-container {
+            padding: 200px 0 120px 0;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+
+            @media screen and (max-width: map-get($breakpoints, "xlarge")) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
+    }
+
+    &#about,
+    &#portfolio,
+    &#team,
+    &#contact {
+        @include sectionPropierties(#FFFFFF);
+        padding-bottom: $section_bottom_padding;
+
+        @media screen and (max-width: map-get($breakpoints, "medium")) {
+            padding: 0 15px 60px 15px;
+        }
+
+        & .section-container.portfolio-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        & .section-container.team-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &#portfolio {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &#team {
+        padding: 0 0 $section_bottom_padding 0;
+    }
+
+    &#services,
+    &#testimonials,
+    &#clients {
+        @include sectionPropierties(#ECF5FF);
+        padding-bottom: $section_bottom_padding;
+
+        @media screen and (max-width: map-get($breakpoints, "medium")) {
+            padding: 0 15px 60px 15px;
+        }
+    }
+
+    &#choose {
+        @include sectionPropierties(#004A99);
+        padding-bottom: $section_bottom_padding;
+
+        @media screen and (max-width: map-get($breakpoints, "medium")) {
+            padding: 0 15px 60px 15px;
+        }
+    
+        & > .section-header {
+            
+            & h3,
+            p {
+                color: #FFFFFF;
+            }
+        }
+
+        & > .section-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+}

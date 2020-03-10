@@ -1,0 +1,54 @@
+.filter-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    & li {
+        display: inline;
+
+        &:last-of-type {
+            
+            & button{
+            margin-right: 0;
+            }
+        }
+
+        & button {
+            cursor: pointer;
+            margin: 15px 15px 15px 0;
+            display: inline-block;
+            padding: 6px 20px;
+            font-size: 12px;
+            line-height: 20px;
+            color: $hover_color;
+            border-radius: 50px;
+            text-transform: uppercase;
+            background-color: #ECF5FF;
+            transition: $page_common_transition;
+            border: none;
+        
+            &:hover {
+                background-color: $hover_color;
+                color: #ECF5FF;
+            }
+
+            &.hover-button {
+                background-color: $hover_color;
+                color: #ECF5FF;
+            }
+        }
+    }
+}
+
+.slider-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: #DDDDDD;
+    border: none;
+
+    &:focus {
+        background-color: $hover_color;
+    }
+}
