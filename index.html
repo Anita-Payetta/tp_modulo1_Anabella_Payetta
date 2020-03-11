@@ -15,37 +15,52 @@
 
 <body id="open-side-nav">
     
+    <!--    
+    =======================================
+                MAIN HEADER
+    ======================================= 
+    -->
     <header class="main-header">
 
-        <img class="main-header-logo" src="img/logo-tp.png" alt="logo_ada"></div>
+        <img class="main-header-logo" src="img/logo-tp.png" alt="logo_ada">
         
+        <!--    
+        =======================================
+            OVERLAY AND SIDE NAV (=<992px)
+        ======================================= 
+        -->
         <a href="#open-side-nav"><i class="fas fa-bars"></i></a>
         <div class="side-nav-overlay">
             <a class="close-side-nav" href="#"><i class="fas fa-times"></i></a>
         </div>
 
+        <!--    
+        =======================================
+                MAIN NAV STRUCTURE
+        ======================================= 
+        -->
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li class="main-nav-item"><a href="#">Home</a></li>
+                <li class="main-nav-item"><a href="#">Home</a></li> <!-- Pongo # en el href para que no recargue la página cada vez que se presiona un link vacio -->
                 <li class="main-nav-item"><a href="#about">About Us</a></li>
                 <li class="main-nav-item"><a href="#services">Services</a></li>
                 <li class="main-nav-item"><a href="#portfolio">Portfolio</a></li>
                 <li class="main-nav-item"><a href="#team">Team</a></li>
-                <li class="main-nav-item drop-down"><a href="">Drop Down</a>
+                <li class="main-nav-item drop-down"><a href="#">Drop Down</a>
                     <ul class="main-nav-sub-list">
-                        <li class="main-nav-sub-item"><a href="">Drop Down 1</a></li>
-                        <li class="main-nav-sub-item drop-down"><a href="">Drop Down 2</a>
+                        <li class="main-nav-sub-item"><a href="#">Drop Down 1</a></li>
+                        <li class="main-nav-sub-item drop-down"><a href="#">Drop Down 2</a>
                             <ul class="main-nav-sub-sub-list">
-                                <li class="main-nav-sub-sub-item"><a href="">Deep Drop Down 1</a></li>
-                                <li class="main-nav-sub-sub-item"><a href="">Deep Drop Down 2</a></li>
-                                <li class="main-nav-sub-sub-item"><a href="">Deep Drop Down 3</a></li>
-                                <li class="main-nav-sub-sub-item"><a href="">Deep Drop Down 4</a></li>
-                                <li class="main-nav-sub-sub-item"><a href="">Deep Drop Down 5</a></li>
+                                <li class="main-nav-sub-sub-item"><a href="#">Deep Drop Down 1</a></li>
+                                <li class="main-nav-sub-sub-item"><a href="#">Deep Drop Down 2</a></li>
+                                <li class="main-nav-sub-sub-item"><a href="#">Deep Drop Down 3</a></li>
+                                <li class="main-nav-sub-sub-item"><a href="#">Deep Drop Down 4</a></li>
+                                <li class="main-nav-sub-sub-item"><a href="#">Deep Drop Down 5</a></li>
                             </ul>
                         </li>
-                        <li class="main-nav-sub-item"><a href="">Drop Down 3</a></li>
-                        <li class="main-nav-sub-item"><a href="">Drop Down 4</a></li>
-                        <li class="main-nav-sub-item"><a href="">Drop Down 5</a></li>
+                        <li class="main-nav-sub-item"><a href="#">Drop Down 3</a></li>
+                        <li class="main-nav-sub-item"><a href="#">Drop Down 4</a></li>
+                        <li class="main-nav-sub-item"><a href="#">Drop Down 5</a></li>
                     </ul>
                 </li>
                 <li class="main-nav-item"><a href="#contact">Contact Us</a></li>
@@ -54,9 +69,14 @@
     
     </header>
 
-    <section class="page-section" id="home">
+    <!--    
+    =======================================
+                HOME SECTION
+    ======================================= 
+    -->
+    <section class="page-section" id="home"> <!-- El ID de cada page section permite vincular la section con el main nav -->
         
-        <div class="section-container">
+        <div class="section-container"> <!-- Cada section posee un section container que comparten propiedades grales. padding, box shadow, etc -->
             <div class="home-image">
                 <img src="img/intro-img.svg" alt="solution-working">
             </div>
@@ -71,22 +91,27 @@
         </div>
     
     </section>
-    
+
+    <!--    
+    =======================================
+                ABOUT SECTION
+    ======================================= 
+    -->    
     <section class="page-section" id="about">
         
         <header class="section-header">
             <h3>About Us</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </header>
+        </header> <!-- Cada section tiene un header con la misma estrucura, se modifican todos los estilos a la vez -->
         
         <div class="section-container">
             
             <div class="about-bar-principal">
-                <div class="image-container">
+                <div class="about-image-container">
                     <img src="img/about-img.svg" alt="reunion_con_perro">
                 </div>
                 
-                <div class="image-description">
+                <div class="about-image-description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     
                     <div class="about-icon-text-container">
@@ -131,7 +156,7 @@
             
             <div class="about-bar-secondary">
                 
-                <div class="image-container">
+                <div class="about-image-container">
                     <img src="img/about-extra-1.svg" alt="mujer_programando">
                 </div>
                 <div class="secondary-bar-text">
@@ -145,7 +170,7 @@
 
             <div class="about-bar-secondary">
 
-                <div class="image-container">
+                <div class="about-image-container">
                     <img src="img/about-extra-2.svg" alt="circuito_de_desarrollo">
                 </div>
                 <div class="secondary-bar-text">
@@ -163,6 +188,11 @@
 
     </section>
 
+    <!--    
+    =======================================
+                SERVICES SECTION
+    ======================================= 
+    -->
     <section class="page-section" id="services">
         
         <header class="section-header">
@@ -176,71 +206,83 @@
                     <i class="fas fa-globe-europe"></i>
                 </div>
                 <h4 class="icon-title">
-                    <a href="">Lorem Ipsum</a>
+                    <a href="#">Lorem Ipsum</a>
                 </h4>
                 <p class="icon-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
             </div>
+            
             <div class="services-card">
                 <div class="card-icon">
                     <i class="far fa-bookmark"></i>
                 </div>
                 <h4 class="icon-title">
-                    <a href="">Dolor Sitema</a>
+                    <a href="#">Dolor Sitema</a>
                 </h4>
                 <p class="icon-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
             </div>
+            
             <div class="services-card">
                 <div class="card-icon">
                     <i class="far fa-paper-plane"></i>
                 </div>
                 <h4 class="icon-title">
-                    <a href="">Sed ut perspiciatis</a>
+                    <a href="#">Sed ut perspiciatis</a>
                 </h4>
                 <p class="icon-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
+            
             <div class="services-card">
                 <div class="card-icon">
                     <i class="fas fa-atom"></i>
                 </div>
                 <h4 class="icon-title">
-                    <a href="">Magni Dolores</a>
+                    <a href="#">Magni Dolores</a>
                 </h4>
                 <p class="icon-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
+            
             <div class="services-card">
                 <div class="card-icon">
                     <i class="fas fa-fingerprint"></i>
                 </div>
                 <h4 class="icon-title">
-                    <a href="">Nemo Enim</a>
+                    <a href="#">Nemo Enim</a>
                 </h4>
                 <p class="icon-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
             </div>
+            
             <div class="services-card">
                 <div class="card-icon">
                     <i class="fas fa-hourglass-half"></i>
                 </div>
                 <h4 class="icon-title">
-                    <a href="">Eiusmod Tempor</a>
+                    <a href="#">Eiusmod Tempor</a>
                 </h4>
                 <p class="icon-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
             </div>
-
         </div>
+
     </section>
+
+    <!--    
+    =======================================
+                CHOOSE SECTION
+    ======================================= 
+    -->
     <section class="page-section" id="choose">
+        
         <header class="section-header">
             <h3>Why choose us?</h3>
             <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
         </header>
+        
         <div class="section-container">
-
-            <div class="choose-card">
-                <div class="choose-card-wrapper">
+            <div class="choose-card"> <!-- Este contenedor exterior al wrapper lo utilizo para controlas la posición entre contenedores y con  los demás elementos de la section -->
+                <div class="choose-card-wrapper"> <!-- Los wrapper los genero para acomodar el contenido interno de las cards (títulos, párrafos, íconos, botones, etc).  -->
                     <i class="far fa-gem"></i>
                     <h4 class="icon-title">Corporis dolorem</h4>
                     <p>Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore officiis aut voluptatibus.</p>
-                    <a href="">Read more</a>
+                    <a href="#">Read more</a>
                 </div>
             </div>
             <div class="choose-card">
@@ -248,7 +290,7 @@
                     <i class="fas fa-language"></i>
                     <h4 class="icon-title">Voluptates dolores</h4>
                     <p>Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur.</p>
-                    <a href="">Read more</a>
+                    <a href="#">Read more</a>
                 </div>
             </div>
             <div class="choose-card">
@@ -256,7 +298,7 @@
                     <i class="far fa-object-group"></i>
                     <h4 class="icon-title">Eum ut aspernatur</h4>
                     <p>Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex.</p>
-                    <a href="">Read more</a>
+                    <a href="#">Read more</a>
                 </div>
             </div>
 
@@ -265,44 +307,65 @@
                     <span>274</span>
                     <p>Clients</p>
                 </div>
+                
                 <div>
                     <span>421</span>
                     <p>Projects</p>
                 </div>
+                
                 <div>
                     <span>1,364</span>
                     <p>Hours Of Support</p>
                 </div>
+                
                 <div>
                     <span>18</span>
                     <p>Hard Workers</p>
                 </div>
             </div>
-
         </div>
+
     </section>
+
+    <!--    
+    =======================================
+                PORTFOLIO SECTION
+    ======================================= 
+    -->
     <section class="page-section" id="portfolio">
+        
         <header class="section-header">
             <h3>Our Portfolio</h3>
+            <!--    
+            =======================================
+                    PORTFOLIO STYLES SELECTOR
+            ======================================= 
+            -->
             <ul class="filter-list">
-                <li><button class="hover-button">All</button></li>
+                <li><button class="hover-button">All</button></li> <!-- Con la clase "hover-button" simulo el botón All siempre en estado hover -->
                 <li><button>App</button></li>
                 <li><button>Card</button></li>
                 <li><button>Web</button></li>
             </ul>
         </header>
+
         <div class="section-container portfolio-section">
             <div class="portfolio-image-container">
                 <div class="portfolio-image-wrapper">
                     <img src="img/portfolio/app1.jpg" alt="">
+                    <!--    
+                    =======================================
+                            PORTFOLIO OVERLAY EFFECT
+                    ======================================= 
+                    -->
                     <div class="portfolio-hover-effect">
-                        <h4><a href="">App 1</a></h4>
+                        <h4><a href="#">App 1</a></h4>
                         <p>app</p>
                         <div>
-                            <a href=""><i class="fas fa-eye"></i></a>
-                            <a href=""><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
                         </div>
-                    </div>
+                    </div> <!-- Aquí termina el overlay -->
                 </div>
             </div>
                 
@@ -310,11 +373,11 @@
                 <div class="portfolio-image-wrapper">
                     <img src="img/portfolio/web3.jpg" alt="">
                     <div class="portfolio-hover-effect">
-                        <h4><a href="">Web 3</a></h4>
+                        <h4><a href="#">Web 3</a></h4>
                         <p>web</p>
                         <div>
-                            <a href=""><i class="fas fa-eye"></i></a>
-                            <a href=""><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -324,11 +387,11 @@
                 <div class="portfolio-image-wrapper">
                     <img src="img/portfolio/app2.jpg" alt="">
                     <div class="portfolio-hover-effect">
-                        <h4><a href="">App 2</a></h4>
+                        <h4><a href="#">App 2</a></h4>
                         <p>app</p>
                         <div>
-                            <a href=""><i class="fas fa-eye"></i></a>
-                            <a href=""><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -338,11 +401,11 @@
                 <div class="portfolio-image-wrapper">
                     <img src="img/portfolio/card2.jpg" alt="">
                     <div class="portfolio-hover-effect">
-                        <h4><a href="">Card 2</a></h4>
+                        <h4><a href="#">Card 2</a></h4>
                         <p>card</p>
                         <div>
-                            <a href=""><i class="fas fa-eye"></i></a>
-                            <a href=""><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -352,11 +415,11 @@
                 <div class="portfolio-image-wrapper">
                     <img src="img/portfolio/web2.jpg" alt="">
                     <div class="portfolio-hover-effect">
-                        <h4><a href="">Web 2</a></h4>
+                        <h4><a href="#">Web 2</a></h4>
                         <p>web</p>
                         <div>
-                            <a href=""><i class="fas fa-eye"></i></a>
-                            <a href=""><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -366,11 +429,11 @@
                 <div class="portfolio-image-wrapper">
                     <img src="img/portfolio/app3.jpg" alt="">
                     <div class="portfolio-hover-effect">
-                        <h4><a href="">App 3</a></h4>
+                        <h4><a href="#">App 3</a></h4>
                         <p>app</p>
                         <div>
-                            <a href=""><i class="fas fa-eye"></i></a>
-                            <a href=""><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -380,11 +443,11 @@
                 <div class="portfolio-image-wrapper">
                     <img src="img/portfolio/card1.jpg" alt="">
                     <div class="portfolio-hover-effect">
-                        <h4><a href="">Card 1</a></h4>
+                        <h4><a href="#">Card 1</a></h4>
                         <p>card</p>
                         <div>
-                            <a href=""><i class="fas fa-eye"></i></a>
-                            <a href=""><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -394,11 +457,11 @@
                 <div class="portfolio-image-wrapper">
                     <img src="img/portfolio/card3.jpg" alt="">
                     <div class="portfolio-hover-effect">
-                        <h4><a href="">Card 3</a></h4>
+                        <h4><a href="#">Card 3</a></h4>
                         <p>card</p>
                         <div>
-                            <a href=""><i class="fas fa-eye"></i></a>
-                            <a href=""><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -408,31 +471,39 @@
                 <div class="portfolio-image-wrapper">
                     <img src="img/portfolio/web1.jpg" alt="">
                     <div class="portfolio-hover-effect">
-                        <h4><a href="">Web 1</a></h4>
+                        <h4><a href="#">Web 1</a></h4>
                         <p>web</p>
                         <div>
-                            <a href=""><i class="fas fa-eye"></i></a>
-                            <a href=""><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
+
     </section>
     
+    <!--    
+    =======================================
+            TESTIMONIALS SECTION
+    ======================================= 
+    -->
     <section class="page-section" id="testimonials">
+        
         <header class="section-header">
             <h3>Testimonials</h3>
         </header>
+        
         <div class="section-container">
-            <div class="testimonials-viewport">
+            <div class="testimonials-viewport"> <!-- El viewport contiene el slider completo, botones y cards de cada testimonial -->
+                <button class="slider-button"></button> <!-- Pongo primero los botones por semántica, así luego puedo trabajar el slider en css -->
                 <button class="slider-button"></button>
                 <button class="slider-button"></button>
                 <button class="slider-button"></button>
                 <button class="slider-button"></button>
-                <button class="slider-button"></button>
-                <div class="testimonials-container">
+                
+                <div class="testimonials-container"> <!-- El testimonials-container contiene todos los testimonios e imágenes en una sola línea, esto me permite utilizar el slider moviendo el mismo el ancho de cada testimonio para seleccionarlo -->
                     <div class="testimonial-wrapper">
                         <img class="testimonial-image" src="img/testimonial-1.jpg" alt="">
                         <div class="testimonial-description">
@@ -441,6 +512,7 @@
                             <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</p>
                         </div>
                     </div>
+                    
                     <div class="testimonial-wrapper">
                         <img class="testimonial-image" src="img/testimonial-2.jpg" alt="">
                         <div class="testimonial-description">
@@ -449,6 +521,7 @@
                             <p>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</p>
                         </div>
                     </div>
+                    
                     <div class="testimonial-wrapper">
                         <img class="testimonial-image" src="img/testimonial-3.jpg" alt="">
                         <div class="testimonial-description">
@@ -457,6 +530,7 @@
                             <p>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</p>
                         </div>
                     </div>
+                    
                     <div class="testimonial-wrapper">
                         <img class="testimonial-image" src="img/testimonial-4.jpg" alt="">
                         <div class="testimonial-description">
@@ -465,6 +539,7 @@
                             <p>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</p>
                         </div>
                     </div>
+                    
                     <div class="testimonial-wrapper">
                         <img class="testimonial-image" src="img/testimonial-5.jpg" alt="">
                         <div class="testimonial-description">
@@ -476,29 +551,39 @@
                 </div>
             </div>
         </div>
+
     </section>
+
+    <!--    
+    =======================================
+                TEAM SECTION
+    ======================================= 
+    -->
     <section class="page-section" id="team">
+        
         <header class="section-header">
             <h3>Team</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
         </header>
+
         <div class="section-container team-section">
             <div class="team-image-container">
                 <div class="team-image-wrapper">
                     <img src="img/team-01.jpg" alt="">
                     <div class="team-hover-effect"></div>
-                    <div class="member-info-hover-effect">
+                    <div class="member-info-hover-effect"> <!-- Overlay sobre imágen de cada team member, similar a lo realizado en el portfolio section -->
                         <h4>Ben Affleck</h4>
                         <p>Chief Executive Officer</p>
                         <div class="member-social-networks">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-google-plus-g"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="team-image-container">
                 <div class="team-image-wrapper">
                     <img src="img/team-02.jpg" alt="">
@@ -507,14 +592,15 @@
                         <h4>Christian Bale</h4>
                         <p>Product Manager</p>
                         <div class="member-social-networks">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-google-plus-g"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="team-image-container">
                 <div class="team-image-wrapper">
                     <img src="img/team-03.jpg" alt="">
@@ -523,14 +609,15 @@
                         <h4>Michael Keaton</h4>
                         <p>CTO</p>
                         <div class="member-social-networks">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-google-plus-g"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="team-image-container">
                 <div class="team-image-wrapper">
                     <img src="img/team-04.jpg" alt="">
@@ -539,73 +626,98 @@
                         <h4>Adam West</h4>
                         <p>Accountant</p>
                         <div class="member-social-networks">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-google-plus-g"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
+
     </section>
+
+    <!--    
+    =======================================
+                CLIENTS SECTION
+    ======================================= 
+    -->
     <section class="page-section" id="clients">
+        
         <header class="section-header">
             <h3>Our Clients</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome nida.</p>
         </header>
-        <div class="section-container client-section">
+
+        <div class="section-container clients-section">
             <div class="client-logo-container">
                 <div class="client-wrapper-container">
                 <img src="img/clients/client-1.png" alt="">
                 </div>
             </div>
+
             <div class="client-logo-container">
                 <div class="client-wrapper-container">
                 <img src="img/clients/client-2.png" alt="">
                 </div>
             </div>
+
             <div class="client-logo-container">
                 <div class="client-wrapper-container">
                 <img src="img/clients/client-3.png" alt="">
                 </div>
             </div>
+
             <div class="client-logo-container">
                 <div class="client-wrapper-container">
                 <img src="img/clients/client-4.png" alt="">
                 </div>
             </div>
+
             <div class="client-logo-container">
                 <div class="client-wrapper-container">
                 <img src="img/clients/client-5.png" alt="">
                 </div>
             </div>
+
             <div class="client-logo-container">
                 <div class="client-wrapper-container">
                 <img src="img/clients/client-6.png" alt="">
                 </div>
             </div>
+
             <div class="client-logo-container">
                 <div class="client-wrapper-container">
                 <img src="img/clients/client-7.png" alt="">
                 </div>
             </div>
+
             <div class="client-logo-container">
                 <div class="client-wrapper-container">
                 <img src="img/clients/client-8.png" alt="">
                 </div>
             </div>
         </div>
+
     </section>
+
+    <!--    
+    =======================================
+                CONTACT SECTION
+    ======================================= 
+    -->
     <section class="page-section" id="contact">
+        
         <header class="section-header">
             <h3>Contact Us</h3>
         </header>
+
         <div class="section-container contact-section">
             <div class="map-address-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen=""></iframe>
             </div>
+            
             <div class="contact-container">
                 <div class="enterprise-data">
                     <div class="enterprise-address">
@@ -631,11 +743,15 @@
                     <button type="submit">Send Message</button>
                 </form>
             </div>   
-
         </div>
 
     </section>
     
+    <!--    
+    =======================================
+                    FOOTER
+    ======================================= 
+    -->
     <footer>
 
         <div class="footer-top">
@@ -679,7 +795,6 @@
                     <input type="submit" value="Subscribe">
                 </form>
             </div>
-
         </div>
 
         <div class="copyright-footer">
@@ -687,12 +802,11 @@
                 © Copyright <strong>Wayne Enterprises</strong>. All Rights Reserved
             </div>
             <div class="credits-container">
-                Designed by ...
+                Designed by (I don't know) but I developed it! Anabella Payetta ;) <!-- Comentario que busca ser gracioso para compensar la demora en los plazos de entrega -->
             </div>
         </div>
     </footer>
         
-    
 </body>
 
 </html>

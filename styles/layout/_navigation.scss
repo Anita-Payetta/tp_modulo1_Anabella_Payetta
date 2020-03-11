@@ -2,6 +2,12 @@ ul {
     list-style: none;
 }
 
+/* 
+===========================================
+            HEADER AND SIDE NAV
+=========================================== 
+*/
+
 .main-nav {
     @media screen and (max-width: map-get($breakpoints, "xlarge")) {
         display: block;
@@ -13,7 +19,7 @@ ul {
         height: 100vh;
         left: -260px;
         top: 0;
-        transition: $page_common_transition;
+        transition: $page_common_transition; /* breakpoint donde el navegador queda como una side list y debido a position left=-260px queda inicialmente escondido*/
 
         & .main-nav-item a{
             color: #FFFFFF;
@@ -66,8 +72,13 @@ ul {
     font-weight: 900;
     padding-left: 10px;
     }
-
 }
+
+/* 
+=======================================
+    DESPEGLABLE SUB LISTS FROM NAV
+======================================= 
+*/ 
 
 .main-nav-item.drop-down:hover .main-nav-sub-list {
     @include desplegableList;
@@ -77,7 +88,7 @@ ul {
         box-shadow: none;
         padding-left: 20px;
         transition: $page_common_transition;
-        background-color: transparent;
+        background-color: transparent; /* Propiedades modificadas para el side nav */
     }
 
     & .main-nav-sub-sub-list {
@@ -112,8 +123,17 @@ ul {
         & .main-nav-sub-sub-item {
             padding: 10px 0;
         }
-        
     }
+}
+
+/* 
+===========================================
+    OVERLAY AND SIDE NAV ANIMATION
+=========================================== 
+*/
+
+.side-nav-overlay {
+    display: none;
 }
 
 #open-side-nav:target {
@@ -127,11 +147,11 @@ ul {
         top: 0;
         background-color: rgba(19, 39, 57, 0.8);
         width: 100vw;
-        height: 100vh;
+        height: 100vh; /* Defino overlay que aparecerá para anchos =< 992px cuando presione las barras del menú */
     }
 
     & .main-nav {
-        transform: translateX(260px);
+        transform: translateX(260px); /* Animación del side menu de apertura horizontal */
     }
 
     & .fas.fa-bars {

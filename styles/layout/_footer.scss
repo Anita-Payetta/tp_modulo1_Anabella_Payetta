@@ -1,3 +1,11 @@
+/* 
+===========================================
+                FOOTER
+=========================================== 
+*/
+
+/* ===== TOP FOOTER ===== */
+
 .footer-top {
     @include sectionPropierties(#004A99);
     padding-bottom:$section_bottom_padding;
@@ -144,10 +152,11 @@
     }
 }
 
+/* ===== COPYRIGHT AND CREDITS INFO ===== */
+
 .copyright-footer {
     background-color: #00428A;
     padding: 30px;
     text-align: center;
     color: #EEEEEE;
-
 }

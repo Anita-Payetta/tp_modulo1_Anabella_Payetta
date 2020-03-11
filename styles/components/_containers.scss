@@ -1,6 +1,8 @@
-.side-nav-overlay {
-    display: none;
-}
+/* 
+===========================================
+        HOME SECTION CONTAINERS
+=========================================== 
+*/
 
 .home-image {
     width: 50%;
@@ -37,6 +39,12 @@
         }
     }
 }
+
+/* 
+===========================================
+        ABOUT SECTION CONTAINERS
+=========================================== 
+*/
 
 .about-icon-text-container {
     @include barContainerPropiertiesRow;
@@ -80,7 +88,7 @@
     }
 }
 
-.image-container {
+.about-image-container {
     width: 50%;
     margin: 20px 0;
     padding: 0 15px;
@@ -94,7 +102,7 @@
     }
 }
 
-.image-description {
+.about-image-description {
     width: 50%;
 
     @media screen and (max-width: map-get($breakpoints, "xlarge")) {
@@ -164,6 +172,12 @@
     }
 }
 
+/* 
+===========================================
+        SERVICES SECTION CONTAINERS
+=========================================== 
+*/
+
 .services-card {
     background-color: #FFFFFF;
     padding: 30px;
@@ -220,6 +234,12 @@
     flex-wrap: wrap;
     }
 }
+
+/* 
+===========================================
+        CHOOSE SECTION CONTAINERS
+=========================================== 
+*/
 
 .choose-card {
     flex: 0 0 33.33333333%;
@@ -284,7 +304,6 @@
             }
         }
     }
-
 }
 
 .counter-container {
@@ -324,6 +343,12 @@
         }
     }
 }
+
+/* 
+===========================================
+        PORTFOLIO SECTION CONTAINERS
+=========================================== 
+*/
 
 .portfolio-image-container {
     height: 280px;
@@ -402,6 +427,79 @@
     }
 }
 
+/* 
+===========================================
+        TESTIMONIALS SECTION CONTAINERS
+=========================================== 
+*/
+
+.testimonials-container {
+    width: 3050px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: 0.75s all;
+
+    @media screen and (max-width: map-get($breakpoints, "xlarge")) {
+        width: 3450px;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "large")) {
+        width: 2550px;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "medium")) {
+        width: 2300px;      
+    }
+
+    & .testimonial-wrapper {
+        display: flex;
+        align-items: center;
+        width: 610px;
+        box-sizing: border-box;
+
+        @media screen and (max-width: map-get($breakpoints, "xlarge")) {
+            width: 690px;
+        }
+    
+        @media screen and (max-width: map-get($breakpoints, "large")) {
+            width: 510px;
+        }
+    
+        @media screen and (max-width: map-get($breakpoints, "medium")) {
+            width: 460px;        
+        }
+
+        & .testimonial-description {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 15px;
+            box-sizing: border-box;
+
+            & h4 {
+                font-size: 22px;
+                font-weight: 600;
+                padding: 10px 0 5px;
+                margin: 0;
+            }
+
+            & h5 {
+                font-size: 14px;
+                font-weight: 400;
+                padding-bottom: 15px;
+                color: #999999;
+                margin: 0;
+            }
+
+            & p {
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+    }
+}
+
 .testimonials-viewport {
     margin: auto;
     max-width: 610px;
@@ -435,75 +533,75 @@
     }
 
     & button:nth-of-type(2):focus ~ .testimonials-container {
-        transform: translateX(-690px);
-    }
-
-    & button:nth-of-type(3):focus ~ .testimonials-container {
-        transform: translateX(-1380px);
-    }
-
-    & button:nth-of-type(4):focus ~ .testimonials-container {
-        transform: translateX(-2070px);
-    }
-
-    & button:nth-of-type(5):focus ~ .testimonials-container {
-        transform: translateX(-2760px);
-    }
-}
-
-.testimonials-container {
-    width: 3450px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    transition: 0.75s all;
-
-    & .testimonial-wrapper {
-        display: flex;
-        align-items: center;
-        width: 610px;
+        transform: translateX(-610px);
 
         @media screen and (max-width: map-get($breakpoints, "xlarge")) {
-            max-width: 690px;
+            transform: translateX(-690px);
         }
     
         @media screen and (max-width: map-get($breakpoints, "large")) {
-            max-width: 510px;
+            transform: translateX(-510px);
         }
     
         @media screen and (max-width: map-get($breakpoints, "medium")) {
-            max-width: 460px;        
+            transform: translateX(-460px);        
         }
+    }
 
-        & .testimonial-description {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 0 15px;
-            box-sizing: border-box;
+    & button:nth-of-type(3):focus ~ .testimonials-container {
+        transform: translateX(-1220px);
 
-            & h4 {
-                font-size: 22px;
-                font-weight: 600;
-                padding: 10px 0 5px;
-                margin: 0;
-            }
+        @media screen and (max-width: map-get($breakpoints, "xlarge")) {
+            transform: translateX(-1380px);
+        }
+    
+        @media screen and (max-width: map-get($breakpoints, "large")) {
+            transform: translateX(-1020px);
+        }
+    
+        @media screen and (max-width: map-get($breakpoints, "medium")) {
+            transform: translateX(-920px);        
+        }
+    }
 
-            & h5 {
-                font-size: 14px;
-                font-weight: 400;
-                padding-bottom: 15px;
-                color: #999999;
-                margin: 0;
-            }
+    & button:nth-of-type(4):focus ~ .testimonials-container {
+        transform: translateX(-1830px);
 
-            & p {
-                font-size: 16px;
-                margin: 0;
-            }
+        @media screen and (max-width: map-get($breakpoints, "xlarge")) {
+            transform: translateX(-2070px);
+        }
+    
+        @media screen and (max-width: map-get($breakpoints, "large")) {
+            transform: translateX(-1530px);
+        }
+    
+        @media screen and (max-width: map-get($breakpoints, "medium")) {
+            transform: translateX(-1380px);        
+        }
+    }
+
+    & button:nth-of-type(5):focus ~ .testimonials-container {
+        transform: translateX(-2440px);
+
+        @media screen and (max-width: map-get($breakpoints, "xlarge")) {
+            transform: translateX(-2760px);
+        }
+    
+        @media screen and (max-width: map-get($breakpoints, "large")) {
+            transform: translateX(-2040px);
+        }
+    
+        @media screen and (max-width: map-get($breakpoints, "medium")) {
+            transform: translateX(-1840px);        
         }
     }
 }
+
+/* 
+===========================================
+        TEAM SECTION CONTAINERS
+=========================================== 
+*/
 
 .team-image-container {
     flex: 0 0 25%;
@@ -604,7 +702,13 @@
     }
 }
 
-.section-container.client-section {
+/* 
+===========================================
+        CLIENTS SECTION CONTAINERS
+=========================================== 
+*/
+
+.section-container.clients-section {
     display: flex;
     flex-wrap: wrap;
     border-top: 1px solid #D6EAFF;
@@ -656,9 +760,14 @@
                 transform: scale(1.3);
             }
         }
-
     }
 }
+
+/* 
+===========================================
+        CONTACT SECTION CONTAINERS
+=========================================== 
+*/
 
 .section-container.contact-section {
     padding: 0 15px;
