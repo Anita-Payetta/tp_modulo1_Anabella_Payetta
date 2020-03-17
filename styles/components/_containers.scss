@@ -810,6 +810,9 @@
             & .enterprice-phone-number {
                 position: relative;
                 padding: 0 15px;
+                vertical-align: middle;
+                line-height: 2;
+            
 
                 & i {
                     color: $hover_color;
